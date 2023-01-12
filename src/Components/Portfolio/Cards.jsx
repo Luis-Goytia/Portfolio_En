@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { AiOutlineGithub, AiOutlineArrowRight, AiOutlineCloseCircle } from "react-icons/ai";
-import Guitar from "../../assets/Guitar2.jpg";
-import Funky from "../../assets/FunkyTravel.png";
+import Youpet from "../../assets/youpet.png";
+import Pokemon from "../../assets/pokemon.jpeg";
 import Video from "../../assets/Movies.png";
 import Weather from "../../assets/Weather.png";
 import Styles from "./Portfolio.module.css"; 
-import modelGuitar from "../../assets/modelGuitar.png";
-import modelFunky from "../../assets/modelFunky.png";
+import modelYoupet from "../../assets/modelYoupet.png";
+import modelPokemon from "../../assets/modelPokemon.png";
 import modelVideo from "../../assets/modelVideo.png";
 import modelSailor from "../../assets/modelSailor.png";
 
@@ -23,22 +23,22 @@ export const Cards = () => {
     <div className={Styles.portfolio_content}>
 
       <div className={Styles.portfolio_group}>
-        <h2 className={Styles.portfolio_card_title}>_Guitar Code </h2>
+        <h2 className={Styles.portfolio_card_title}>Youpet</h2>
           <h3 className={Styles.portfolio_type}>: : : Full Stack : : :</h3>
-        <img src={Guitar} alt="Guitar_Code" className={Styles.portfolio_img} onClick={()=> clickImage(1)}/>
+        <img src={Youpet} alt="Youpet" className={Styles.portfolio_img} onClick={()=> clickImage(1)}/>
 
         <div>
           <div className={Styles.portfolio_info}>
-            <a href="https://github.com/djaroldito/e-guitar-REACT" target="_blank" className={Styles.portfolio_code}><AiOutlineGithub className={Styles.portfolio_info_icon}/>Code</a>
-            <a  href="https://e-guitar-react.vercel.app/" target="_blank" className={Styles.portfolio_demo}>Demo <AiOutlineArrowRight className={Styles.portfolio_info_icon}/></a>
+            <a href="https://github.com/Luis-Goytia/YouPet" target="_blank" className={Styles.portfolio_code}><AiOutlineGithub className={Styles.portfolio_info_icon}/>Code</a>
+            <a  href="https://youpet.vercel.app/" target="_blank" className={Styles.portfolio_demo}>Demo <AiOutlineArrowRight className={Styles.portfolio_info_icon}/></a>
           </div>
 
           <div className={modal === 1 ? Styles.portfolio_modal_active : Styles.portfolio_modal}>
             <div className={Styles.portfolio_modal_overlay} onClick={() => clickImage(0)}></div> 
             <AiOutlineCloseCircle className={Styles.portfolio_modal_icon} onClick={() => clickImage(0)}/>
             <div className={Styles.portfolio_modal_content}>
-                <img src={modelGuitar} className={Styles.portfolio_modal_img} />
-                <h3 className={Styles.porftolio_modal_text}>Componente de Pre-Pago con formulario</h3>
+                <img src={modelYoupet} className={Styles.portfolio_modal_img} />
+                <h3 className={Styles.porftolio_modal_text}>App to take appointments for your pet with your favorite vet.</h3>
             </div>
           </div> 
           
@@ -47,27 +47,27 @@ export const Cards = () => {
       </div>
 
       <div className={Styles.portfolio_group}>
-        <h2 className={Styles.portfolio_card_title}>_Funky Travel</h2>
+        <h2 className={Styles.portfolio_card_title}>Pokemon App</h2>
           <h3 className={Styles.portfolio_type}>: : : Full Stack : : :</h3>
-        <img src={Funky} alt="Funky_Tavel" className={Styles.portfolio_img} onClick={()=> clickImage(2)}/>
+        <img src={Pokemon} alt="Pokemon_App" className={Styles.portfolio_img} onClick={()=> clickImage(2)}/>
 
         <div>
           <div className={Styles.portfolio_info}>
-            <a  href="https://github.com/a1l1n/Funky-Travel" target="_blank" className={Styles.portfolio_code}><AiOutlineGithub className={Styles.portfolio_info_icon}/>Code</a>
+            <a  href="https://github.com/Luis-Goytia/PI-Pokemon" target="_blank" className={Styles.portfolio_code}><AiOutlineGithub className={Styles.portfolio_info_icon}/>Code</a>
           </div>
 
           <div className={modal === 2 ? Styles.portfolio_modal_active : Styles.portfolio_modal}>
             <div className={Styles.portfolio_modal_overlay} onClick={()=> clickImage(0)}></div> 
             <AiOutlineCloseCircle className={Styles.portfolio_modal_icon} onClick={()=> clickImage(0)}/>
             <div className={Styles.portfolio_modal_content}>
-              <img src={modelFunky} className={Styles.portfolio_modal_img} />
-              <h3 className={Styles.porftolio_modal_text}>Landing Page</h3>
+              <img src={modelPokemon} className={Styles.portfolio_modal_img} />
+              <h3 className={Styles.porftolio_modal_text}>SPA about listing and searching for Pokemons</h3>
             </div>
           </div>
         
         </div>
       </div>
-
+{/* 
       <div className={Styles.portfolio_group}>
         <h2 className={Styles.portfolio_card_title}>_Video Check</h2>
           <h3 className={Styles.portfolio_type}>: : : Front-End : : :</h3>
@@ -110,7 +110,7 @@ export const Cards = () => {
 
 
         </div>
-      </div>
+      </div> */}
 
     </div>
   )
