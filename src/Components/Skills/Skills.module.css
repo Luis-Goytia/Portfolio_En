@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Nunito:wght@300;400&display=swap');
+
+.skills_section {
+    height: 95vh;
+    padding-top: 1rem;
+}
+
+.skills_title_gral, .skills_subtitle_gral {
+    text-align: center;
+}
+
+.skills_title_gral {
+    font-size: 40px;
+    padding-top: 3rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.skills_subtitle_gral {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+
+
+.skills_container_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 4rem;
+    row-gap: 4rem;
+    justify-content: center;
+}
+
+.skills_content {
+    background-color: white;
+    height: 20rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    ;
+    border-radius: 10px;
+}
+
+.skills_title {
+    font-size: 18px;
+    font-weight: 640;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skills_box {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: left;
+    column-gap: 5rem;
+    padding: 1rem 1.8rem;
+    width: 95%;
+}
+
+.skills_group {
+    display: flex;
+    flex-direction: row;
+    width: 10rem;   
+}
+
+.skills_icon {
+    margin-right: 0.5rem;
+    margin-top:  0.5rem;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.skills_level {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* RESPONSIVE --------------------------------------------- */
+@media screen and (max-width: 801px) {
+    .skills_section {
+        height: 840px;
+        padding-top: 0rem;
+    }
+    
+    .skills_container_grid {
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+
+    .skills_title_gral {
+        padding-top: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

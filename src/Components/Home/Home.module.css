@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Nunito:wght@300;400&display=swap');
+
+.home_section {
+    height: 100vh;
+    padding-top: 3.8em; 
+    background-color: #dfdede33;
+}
+
+.home_container {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    row-gap: 5em;
+}
+
+.home_content {
+    display: grid;
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home_data {
+    margin-top: 1.5rem;
+}
+
+/* IMAGE ------------------------------------ */
+.home_img {
+    background: url("../../assets/Profile2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
+    order: 1;
+    justify-self: center;
+    width: 610px;
+    height: 610px;
+    
+}
+
+/* BUTTON ----------------------------------- */
+
+.home_button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 2.6em;
+    width: 9em;
+    margin-top: 2.5rem;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+.home_button_a {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+
+.home_button_icon {
+    margin-left: 0.8em;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.home_button:hover {
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+/* SOCIAL ---------------------------- */
+.home_social {
+/*     display: flex;
+    flex-direction: column;
+    background-color: yellow; 
+    CHEQUEAR SI HAY DIFERENCIAS CON EL TEMA RESPONSIVE*/
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1.5rem;
+}
+
+.home_social_icon {
+    color: black;
+    font-size: 35px;
+    transition: 0.25s;
+}
+
+.home_social_icon:hover {
+    transform: scale(1.60, 1.60);
+    color: rgb(117, 17, 150);
+}
+
+/* TITLE ------------------------ */
+.home_title {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    font-family: 'Jost', sans-serif;
+}
+
+/* SUBTITLE --------------------------------------------------- */
+
+.home_subtitle {
+    width: 20rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.5px solid black;
+}
+
+.home_subtitle h3 {
+    margin-left: 5rem;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* PRESENTATION ----------------------------------------------- */
+
+.home_presentation {
+    max-width: 500px;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* SCROLL ----------------------------------------- */
+.home_scroll {
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    position: relative;
+    z-index: 0;
+}
+
+.home_scroll_button {
+    margin-left: 9rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform:  translateY(0);
+    }
+    30% {
+        transform: translateY(2rem);
+    }
+}
+
+.home_scroll_icon {
+    color: rgb(117, 17, 150);
+    animation: scroll 4s ease infinite;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.home_scroll_span {
+    position: relative;
+    margin-left: 2em;
+    top: .5rem;
+    color: rgba(0, 0, 0, 0.671)
+}
+
+/* RESPONSIVE ------------------------------ */
+@media screen and (max-width: 992px){   
+    .home_content {
+        grid-template-columns: 100px repeat(2, 1fr);
+        column-gap: 1.25rem;
+    }
+
+    .home_subtitle {
+        margin-bottom: 2rem;
+    }
+
+    .home_presentation {
+        max-width: initial;
+        margin-bottom: 1rem;
+    }
+
+    .home_img {
+        width: 260px;
+        height: 260px;
+        box-shadow: inset 0 0 0 8px rgb(255, 255, 255 / 30%);
+    }
+}
+
+@media screen and (max-width: 801px){
+    .home_section {
+        padding-top: 2rem;
+    }
+
+    .home_content {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 6rem; 
+    } 
+
+    .home_img {
+        position: absolute;
+        top: 6rem;
+        right: 4rem; 
+        width:300px;
+        height: 300px;
+        box-shadow: inset 0 0 0 6px rgb(255, 255, 255 / 30%);
+    }
+
+    .home_data {
+        grid-column: 1/3;
+    }
+
+    .home_title {
+        font-size: 40px;
+    }
+
+    .home_subtitle {
+        width: 18rem;
+    }
+
+    .home_subtitle h3 {
+        font-size: 20px;
+    }
+ 
+    .home_presentation {
+        margin-bottom: 1rem;
+    }
+
+    .home_scroll {
+        display: none;
+    }
+}
+
+@media screen and (max-width:644px){
+    .home_img {
+        top: 5rem;
+        left: 7rem;
+        width: 250px;
+        height: 250px;
+    }
+}
+

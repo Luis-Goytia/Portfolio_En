@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Nunito:wght@300;400&display=swap');
+
+.contact_section {
+    position: relative;
+    height: 100vh; 
+}
+
+.contact_title, .contact_subtitle {
+    text-align: center;
+}
+
+.contact_title {
+    font-size: 40px;
+    padding-top: 6rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.contact_subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+
+.contact_container_grid {
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    justify-content: center;
+    column-gap: 10em;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.contact_content_title {
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contact_info {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 300px;
+}
+
+.contact_card {
+    background-color: white;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact_mail_icon, .contact_lin_incon {
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.contact_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+
+.contact_data h3 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.contact_data span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contact_data a {
+    display: inline-flex;
+    column-gap: 0.25rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.contact_send_arrow {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.contact_button:hover > .contact_send_arrow {
+    transform: translate(00.25rem);
+}
+
+/* FORM --------------------------------------------------------- */
+.contact_form {
+    width: 360px;
+    height: 20rem;
+}
+
+.contact_form_div {
+    position: relative;
+    margin-bottom: 1rem;
+    height: 4rem;
+}
+
+.contact_form_input, .contact_form_area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.contact_form_tag {
+    position: absolute;
+    top: -0.75rem;
+    left: 1.25rem;
+    font-size: 15px;
+    padding: 0.25rem;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+.contact_form_area {
+    height: 8rem;
+    width: 100%;
+    color:rgba(0, 0, 0, 0.6)
+}
+
+.contact_form_area textarea {
+    resize: none;
+}
+
+.contact_send_button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 2.6em;
+    width: 9em;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 6rem 4rem;
+}
+
+.contact_send_button:hover {
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+/* RESPONSIVE ------------------------------------------- */
+@media screen and (max-width: 992px) {
+    .contact_container_grid {
+        column-gap: 3rem;
+    }
+
+    .contact_form {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 801px){
+    .contact_title {
+        padding-top:19rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact_section {
+        height: 1150px;
+        margin-top: 19rem; 
+    }
+
+    .contact_container_grid {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    
+    .contact_info {
+        justify-content: center;
+    }
+
+    .contact_form {
+        margin: 0 auto;
+    }
+
+    .contact_content_title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .contact_form {
+        width: 300px;
+    }
+
+    .contact_section {
+        position: relative;
+        height: 160vh; }
+}
+
+/* .contact_img {
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: color-burn;
+    opacity: 0;
+} */
+
+
+
+
