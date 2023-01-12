@@ -19,15 +19,15 @@ export const Contact = () => {
           console.log("Mensaje enviado", result.text);
           Swal.fire({
             icon: 'success',
-            title: 'Mensaje enviado!',
-            text: 'En breves te responderé',
+            title: 'Message sent!',
+            text: 'I will answer you shortly',
           })
       }, (error) => {
           console.log("Todo ha fallado, el horror", error.text);
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Hubo un error, probá de nuevo más tarde por favor'
+            text: 'There was an error, please try again later'
           })
         });
       e.target.reset();
@@ -62,7 +62,7 @@ export const Contact = () => {
                       <h3>Email</h3>
                       <span>luisgoytia.dev@gmail.com</span>
                       <a href="mailto:luisgoytia.dev@gmail.com" className={Styles.contact_button}>
-                        Escribime <AiOutlineArrowRight className={Styles.contact_send_arrow}/>
+    Write me<AiOutlineArrowRight className={Styles.contact_send_arrow}/>
                       </a>
                     </div>
                   </div>
@@ -71,9 +71,9 @@ export const Contact = () => {
                     <AiOutlineLinkedin className={Styles.contact_lin_incon}/>
                     <div className={Styles.contact_data}>
                       <h3>LinkedIn</h3>
-                      <span>Mandame un DM </span>
+                      <span>Send a message </span>
                       <a href="https://www.linkedin.com/in/luis-goytia/" target="_blank" className={Styles.contact_button}>
-                      Mensaje <AiOutlineArrowRight className={Styles.contact_send_arrow}/>
+                      Message <AiOutlineArrowRight className={Styles.contact_send_arrow}/>
                       </a>
                     </div>
                   </div>
