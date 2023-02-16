@@ -221,4 +221,10 @@
 
 
 
+@media screen and (max-width: 412px) {
 
+    .contact_section {
+        height: 1150px;
+        margin-top:25rem; 
+    }
+}
