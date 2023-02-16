@@ -29,7 +29,7 @@
 }
 .portfolio_content {
     display: grid;
-    grid-template-columns: repeat(4, 350px);
+    grid-template-columns: repeat(2, 350px);
     height: 20rem;
     width: 100%;
     justify-content: center;
