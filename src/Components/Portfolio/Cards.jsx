@@ -91,7 +91,7 @@ export const Cards = () => {
             <AiOutlineCloseCircle className={Styles.portfolio_modal_icon} onClick={()=> clickImage(0)}/>
             <div className={Styles.portfolio_modal_content}>
               <img src={modelClean} className={Styles.portfolio_modal_img} />
-              <h3 className={Styles.porftolio_modal_text}>Landig Page for developing game</h3>
+              <h3 className={Styles.porftolio_modal_text}>Landing Page for video game in development</h3>
             </div>
           </div>
         </div>
