@@ -58,3 +58,10 @@
     margin: 0rem 0.5rem;
 }
 
+@media screen and (max-width: 412px) {
+
+    footer{
+        margin-top: 10rem;
+    }
+    
+}
